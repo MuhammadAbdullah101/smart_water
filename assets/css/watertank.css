@@ -1,0 +1,49 @@
+
+.cylinder {
+	position: relative;
+	overflow: hidden;
+	margin: 0 auto;
+	width: 200px;
+	height: 300px;
+	border-radius: 50px/25px;
+	background-color: rgba(160, 160, 160, 0.5);
+}
+
+.cylinder:before {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 200px;
+	height: 50px;
+	border-radius: 50px/25px;
+	background-color: rgba(160, 160, 160, 0.5);
+	content: '';
+}
+
+.cylinder:after {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 200px;
+	height: 50px;
+	border-radius: 50px/25px;
+	background-color: rgba(160, 160, 160, 0.5);
+	content: '';
+}
+
+.water {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 200px;
+	height: 0;
+	padding-top: 50px;
+	border-radius: 50px/25px;
+	background-color: rgb(0, 160, 160, 0.2);
+	transition: 0.3s linear;
+}
+
+
+.cylinder .water {
+	height: 340px;
+}

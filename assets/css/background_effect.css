@@ -1,0 +1,125 @@
+.large-header {
+   position: relative;
+   width: 100%;
+   background: #111;
+   overflow: hidden;
+   background-size: cover;
+   background-position: center center;
+   z-index: 1;
+}
+
+.demo .large-header {
+   background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/demo-bg.jpg");
+}
+
+.main-title {
+   position: absolute;
+   margin: 0;
+   padding: 0;
+   color: #F9F1E9;
+   text-align: center;
+   top: 50%;
+   left: 50%;
+   -webkit-transform: translate3d(-50%, -50%, 0);
+   transform: translate3d(-50%, -50%, 0);
+}
+
+.demo .main-title {
+   text-transform: uppercase;
+   font-size: 4.2em;
+   letter-spacing: 0.1em;
+}
+
+.main-title .thin {
+   font-weight: 200;
+}
+
+@media only screen and (max-width: 768px) {
+   .demo .main-title {
+      font-size: 3em;
+   }
+}
+
+.modal-confirm {        
+        color: #434e65;
+        width: 525px;
+        margin: 30px auto;
+    }
+    .modal-confirm .modal-content {
+        padding: 20px;
+        font-size: 16px;
+        border-radius: 5px;
+        border: none;
+    }
+   
+    .modal-confirm .modal-header {
+        background:  #299AEB;
+        border-bottom: none;   
+        position: relative;
+        text-align: center;
+        margin: -20px -20px 0;
+        border-radius: 5px 5px 0 0;
+        padding: 35px;
+    }
+    .modal-confirm h4 {
+        text-align: center;
+        font-size: 36px;
+        margin: 10px 0;
+    }
+    .modal-confirm .form-control, .modal-confirm .btn {
+        min-height: 40px;
+        border-radius: 3px; 
+    }
+    .modal-confirm .close {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        color: #fff;
+        text-shadow: none;
+        opacity: 0.5;
+    }
+    .modal-confirm .close:hover {
+        opacity: 0.8;
+    }
+    .modal-confirm .icon-box {
+        color: #fff;        
+        width: 95px;
+        height: 95px;
+        display: inline-block;
+        z-index: 9;
+        padding: 15px;
+        text-align: center;
+    }
+    .modal-confirm .icon-box i {
+        font-size: 64px;
+        margin: -4px 0 0 -4px;
+    }
+    .modal-confirm .btn {
+        color: #fff;
+        border-radius: 4px;
+        background: #299AEB;
+        text-decoration: none;
+        transition: all 0.4s;
+        line-height: normal;
+        border-radius: 30px;
+        margin-top: 10px;
+        padding: 6px 20px;
+        border: none;
+    }
+    .modal-confirm .btn:hover, .modal-confirm .btn:focus {
+        background:#16385C;
+        outline: none;
+    }
+    .modal-confirm .btn span {
+        margin: 1px 3px 0;
+        float: left;
+    }
+    .modal-confirm .btn i {
+        margin-left: 1px;
+        font-size: 20px;
+        float: right;
+    }
+    .trigger-btn {
+        display: inline-block;
+        margin: 100px auto;
+    }

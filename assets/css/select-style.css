@@ -1,0 +1,71 @@
+/*
+  Common styles to all themes
+  Please to customice the design create a custom 'theme' below
+*/
+
+.select-style {
+  width: 100%;
+  overflow: hidden;
+}
+.select-style select {
+  width: 100%;
+  padding-right: 38px;
+  border: none;
+  box-shadow: none;
+  background: transparent;
+  background-image: none;
+  -webkit-appearance: none;
+  outline: none;
+  cursor: pointer;
+
+  /* Hide arrow on FF */
+  -moz-appearance: none;
+  text-indent: 0.01px;
+  text-overflow: ellipsis;
+}
+/* Hide arrow on IE10*/
+.select-style select::-ms-expand {
+  display: none;
+}
+.select-style optgroup {
+  color: inherit;
+  font: inherit;
+}
+/* IE9: To hide select arrow we make the select overflow on the right side there is not another way :( */
+@media screen and (min-width:0\0) {
+  .select-style select {
+    width: calc( 100% + 58px );
+  }
+}
+
+
+
+/* Rounded and filled ------------------------------------------------------- */
+.theme-filled {
+  border-radius: 50px;
+  /* <svg xmlns="http://www.w3.org/2000/svg" width="18" height="22" viewBox="0 0 18 22"><path d="M9 17L2.07 5L15.93 5z" fill="#fff"/></svg> */
+  background: #2980b9 url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218%22%20height%3D%2222%22%20viewBox%3D%220%200%2018%2022%22%3E%3Cpath%20d%3D%22M9%2017L2.07%205L15.93%205z%22%20fill%3D%22%23fff%22%2F%3E%3C%2Fsvg%3E') right 14px center no-repeat;
+  box-shadow: 0px 10px 10px -6px rgba(0,0,0,0.25);
+}
+.theme-filled select {
+  padding: 14px 38px 14px 16px;
+  font: 400 16px/1 'Montserrat', sans-serif;
+  letter-spacing: 2px;
+  color: #fff; /* Cution this is not recommended on IE9! */
+}
+.theme-filled select option {
+  color: #ccc;
+}
+/* Rounded and border------------------------------------------------------- */
+.theme-rounded {
+  border: 2px solid #2980b9;
+  border-radius: 50px;
+  /* <svg xmlns="http://www.w3.org/2000/svg" width="18" height="22" viewBox="0 0 18 22"><path d="M9 17L2.07 5L15.93 5z" stroke-width="2" stroke="#2980b9" fill="transparent"/></svg> */
+  background: #fff url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218%22%20height%3D%2222%22%20viewBox%3D%220%200%2018%2022%22%3E%3Cpath%20d%3D%22M9%2017L2.07%205L15.93%205z%22%20stroke-width%3D%222%22%20stroke%3D%22%232980b9%22%20fill%3D%22transparent%22%2F%3E%3C%2Fsvg%3E') right 14px center no-repeat;
+}
+.theme-rounded select {
+  padding: 12px 38px 12px 16px;
+  font: 400 16px/1 'Montserrat', sans-serif;
+  letter-spacing: 2px;
+  color: #2980b9;
+}
